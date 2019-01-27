@@ -1,2 +1,1 @@
-# maharsh.net
-New Website
+### Code for maharsh.net
