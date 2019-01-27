@@ -1,0 +1,19 @@
+.header {
+    background-color: green;
+    /* height: 100px; */
+    /* padding: 25px 0 25px; */
+    /* max-width: 500px; */
+}
+
+.logo {
+    /* margin: 0 10px 0; */
+    background-color: red;
+}
+
+.nav-items {
+    background-color: beige;
+}
+
+.nav-item {
+    /* margin: 0 10px 0; */
+}
