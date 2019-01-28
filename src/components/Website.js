@@ -17,7 +17,7 @@ class Website extends Component {
           <WelcomeMessage/>
         </Row>
         <Row>
-          <TiledSection title="Work"/>
+          <TiledSection title="Work." tilesData={["Google", "Intuit", "University of Alberta"]}/>
         </Row>
       </Container>
     );
