@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Website.css';
-import Header from "./components/Header";
-import WelcomeMessage from "./components/WelcomeMessage";
+import '../styles/Website.css';
+import Header from "./Header";
+import WelcomeMessage from "./WelcomeMessage";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

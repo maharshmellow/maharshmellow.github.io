@@ -9,11 +9,17 @@ class Header extends Component {
     return (
       <Container className="header" fluid={true}>
         <Row>
-          <Col sm={6}>  
+          <Col xs={12} sm={7}>  
             <Logo/>
           </Col>
-          <Col sm={6}>
-            <NavItems/>
+          <Col xs={12} sm={5}>
+            <Row className="nav-items">
+              <Col xs={12}>
+                <a className="nav-item" href="https://www.github.com/maharshmellow">Github</a>
+                <a className="nav-item" href="https://www.github.com/maharshmellow">LinkedIn</a>
+                <a className="nav-item" href="https://www.github.com/maharshmellow">LinkedIn</a>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
@@ -34,11 +40,18 @@ class Logo extends Component {
 class NavItems extends Component {
   render() {
     return (
-      <div className="nav-items">
-        <a className="nav-item" href="https://www.github.com/maharshmellow">Github</a>
-        <a className="nav-item" href="https://www.github.com/maharshmellow">LinkedIn</a>
-        <a className="nav-item" href="https://www.github.com/maharshmellow">Contact</a>
-      </div>
+      <Row className="nav-items">
+        <Col sm={4}>
+          <a className="nav-item" href="https://www.github.com/maharshmellow">a</a>
+        </Col>
+        <Col sm={4}>
+          <a className="nav-item" href="https://www.github.com/maharshmellow">a</a>
+        </Col>
+        <Col sm={4}>
+          <a className="nav-item" href="https://www.github.com/maharshmellow">a</a>
+        </Col>
+      </Row>
+      
     )
   }
 }
