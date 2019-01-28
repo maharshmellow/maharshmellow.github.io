@@ -1,32 +1,23 @@
 .header {
     background-color: green;
-    /* height: 100px; */
-    /* padding: 25px 0 25px; */
-    /* max-width: 500px; */
 }
 
-.logo {
-    /* margin: 0 10px 0; */
-    background-color: red;
+/* bootstrap overrides */
+.navbar {
+    padding: 0 !important;
 }
 
-.nav-items {
-    background-color: beige;
-    text-align: right;
-    /* float: none; */
-    /* margin: 0 auto; */
-
-}
-
-.nav-item {
-    /* background-color: red; */
+.nav-link {
+    padding-right: 0 !important;
+    padding-left: 25px !important;
     font-size: 14px;
-    margin-left: 10px;
-    /* margin: 0 10px; */
-    
-    /* width: 100%; */
-    
+    text-align: center;
+}
 
-    /* float: right; */
-    /* margin: 0 10px 0; */
+.navbar-toggler {
+    border: none !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    outline: 0 !important;
+
 }

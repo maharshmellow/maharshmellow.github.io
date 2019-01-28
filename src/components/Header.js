@@ -1,58 +1,27 @@
 import React, { Component } from 'react';
 import '../styles/Header.css';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 class Header extends Component {
   render() {
     return (
       <Container className="header" fluid={true}>
-        <Row>
-          <Col xs={12} sm={7}>  
-            <Logo/>
-          </Col>
-          <Col xs={12} sm={5}>
-            <Row className="nav-items">
-              <Col xs={12}>
-                <a className="nav-item" href="https://www.github.com/maharshmellow">Github</a>
-                <a className="nav-item" href="https://www.github.com/maharshmellow">LinkedIn</a>
-                <a className="nav-item" href="https://www.github.com/maharshmellow">LinkedIn</a>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+        <Navbar collapseOnSelect expand="sm">
+          <Navbar.Brand href="#home">maharsh.</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto"></Nav>
+            <Nav>
+              <Nav.Link href="#features">Github</Nav.Link>
+              <Nav.Link href="#pricing">LinkedIn</Nav.Link>
+              <Nav.Link href="#pricing">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </Container>
     );
-  }
-}
-
-class Logo extends Component {
-  render() {
-    return (
-      <div className="logo">
-          maharsh.
-      </div>
-    )
-  }
-}
-
-class NavItems extends Component {
-  render() {
-    return (
-      <Row className="nav-items">
-        <Col sm={4}>
-          <a className="nav-item" href="https://www.github.com/maharshmellow">a</a>
-        </Col>
-        <Col sm={4}>
-          <a className="nav-item" href="https://www.github.com/maharshmellow">a</a>
-        </Col>
-        <Col sm={4}>
-          <a className="nav-item" href="https://www.github.com/maharshmellow">a</a>
-        </Col>
-      </Row>
-      
-    )
   }
 }
 
