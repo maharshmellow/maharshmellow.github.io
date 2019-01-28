@@ -3,6 +3,7 @@ import '../styles/FullScreenPage.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ReactMarkdown from "react-markdown";
 
 var data = {
   title: "Google",
@@ -10,23 +11,17 @@ var data = {
   experiences: [
     {
       title: "Software Engineering Intern",
-      date: "Mar 2018 - Jun 2018",
-      location: "Mountain View, CA",
-      team: "Google Home",
-      bullets: [
-        "First Bullet",
-        "Second Bullet"
-      ]
-    },
-    {
-      title: "Software Engineering Intern",
       date: "May 2019 - Aug 2019",
       location: "Los Angeles, CA",
       team: "Google Drive",
-      bullets: [
-        "First Bullet",
-        "Second Bullet"
-      ]
+      content: "First Bullet Second Bullet"
+    },
+    {
+      title: "Software Engineering Intern",
+      date: "Mar 2018 - Jun 2018",
+      location: "Mountain View, CA",
+      team: "Google Home",
+      content: "# First Bullet \n ## Second *Bullet* ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)"
     }
   ]
 }
@@ -38,14 +33,31 @@ class FullScreenPage extends Component {
 
     data.experiences.forEach(experience => {
       contents.push(
-        <Row className="experience-heading">
-          <Col xs={8}>
-            <div className="title">{experience.title}</div>
-          </Col>
-          <Col xs={4}>
-            <div className="date">{experience.date}</div>
-          </Col>
-        </Row>
+        <div>
+          <Row className="experience-heading">
+            <Col xs={7}>
+              <div className="title">{experience.title}</div>
+            </Col>
+            <Col xs={5}>
+              <div className="date">{experience.date}</div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={7}>
+              <div className="location">{experience.location}</div>
+            </Col>
+            <Col xs={5}></Col>
+          </Row>
+
+          <Row>
+            <Col xs={7}>
+              <div className="content">
+                <ReactMarkdown source={experience.content}/>
+              </div>
+            </Col>
+            <Col xs={5}></Col>
+          </Row>
+        </div>
         )
     });
 

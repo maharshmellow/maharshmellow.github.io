@@ -44,3 +44,15 @@
     text-align: right;
     float: right;
 }
+
+.location {
+    /* background-color: green; */
+    margin-top: -10px;
+}
+
+h1 {
+    font-size: 14px;
+}
+h2 {
+    font-size: 12px;
+}
