@@ -5,6 +5,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 class TiledSection extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      open: false
+    }
+  }
+
+  onButtonClick = () => {
+    this.setState({
+      open: true
+    })
+  };
 
   getTiles = () => {
     const tilesData = this.props.tilesData;
@@ -12,7 +25,7 @@ class TiledSection extends Component {
     tilesData.forEach(title => {
       tiles.push(
         <Col sm={4} className={"tile"}>
-          <button class="tile-button">{title}</button>
+          <button onClick={() => this.onButtonClick()} class="tile-button">{title}</button>
         </Col>
       );
     });
@@ -21,21 +34,25 @@ class TiledSection extends Component {
   }
 
   render() {
-    
-    return (
-      <Container className="tiled-section" fluid={true}>
-        <Row>
-          <Col sm={4} className="section-title">  
-            {this.props.title}
-          </Col>
-        </Row>
-        <Row className={"tiles"}>
-          {
-            this.getTiles()
-          }
-        </Row>
-      </Container>
-    );
+    if (this.state.open) {
+      return (<div className="page">testing</div>);
+    }
+    else {
+      return (
+          <Container className="tiled-section" fluid={true}>
+            <Row>
+              <Col sm={4} className="section-title">  
+                {this.props.title}
+              </Col>
+            </Row>
+            <Row className={"tiles"}>
+              {
+                this.getTiles()
+              }
+            </Row>
+          </Container>
+      );
+    }
   }
 }
 
