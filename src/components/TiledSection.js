@@ -3,6 +3,7 @@ import '../styles/TiledSection.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import FullScreenPage from './FullScreenPage';
 
 class TiledSection extends Component {
   constructor(props) {
@@ -33,9 +34,15 @@ class TiledSection extends Component {
     return tiles;
   }
 
+  closeFullScreenPage = () => {
+    this.setState({
+      open: false
+    })
+  }
+
   render() {
     if (this.state.open) {
-      return (<div className="page">testing</div>);
+      return (<FullScreenPage onClose={() => this.closeFullScreenPage()}/>);
     }
     else {
       return (
