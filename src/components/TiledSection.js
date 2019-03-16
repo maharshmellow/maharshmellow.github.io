@@ -9,24 +9,27 @@ class TiledSection extends Component {
   constructor(props) {
     super(props);
 
+    // TODO: move this to the parent component so that all modals can be managed at the same place
     this.state = {
-      open: false
+      openedTile: null,
     }
   }
 
-  onButtonClick = () => {
+  onButtonClick = (tile) => {
     this.setState({
-      open: true
-    })
+      openedTile: tile
+    });
+
+    console.log(tile);
   };
 
   getTiles = () => {
     const tilesData = this.props.tilesData;
     var tiles = [];
-    tilesData.forEach(title => {
+    tilesData.forEach(tile => {
       tiles.push(
         <Col sm={4} className={"tile"}>
-          <button onClick={() => this.onButtonClick()} class="tile-button">{title}</button>
+          <button onClick={() => this.onButtonClick(tile)} className="tile-button">{tile.title}</button>
         </Col>
       );
     });
@@ -36,13 +39,13 @@ class TiledSection extends Component {
 
   closeFullScreenPage = () => {
     this.setState({
-      open: false
+      openedTile: null
     })
   }
 
   render() {
-    if (this.state.open) {
-      return (<FullScreenPage onClose={() => this.closeFullScreenPage()}/>);
+    if (this.state.openedTile) {
+      return (<FullScreenPage onClose={() => this.closeFullScreenPage()} data={this.state.openedTile}/>);
     }
     else {
       return (

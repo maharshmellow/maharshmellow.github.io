@@ -5,6 +5,7 @@ import WelcomeMessage from "./WelcomeMessage";
 import TiledSection from "./TiledSection"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import workData from "../data/Work";
 
 class Website extends Component {
   render() {
@@ -17,7 +18,7 @@ class Website extends Component {
           <WelcomeMessage/>
         </Row>
         <Row>
-          <TiledSection title="Work." tilesData={["Google", "Intuit", "University of Alberta"]}/>
+          <TiledSection title="work." tilesData={workData}/>
         </Row>
       </Container>
     );
