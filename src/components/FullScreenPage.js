@@ -58,21 +58,20 @@ class FullScreenPage extends Component {
         </div>
     }
 
-    var code;
+    var view;
     if (this.props.data.demoLink || this.props.data.githubLink) {
-      code = 
-        <div className="code subsection">
-          <h1>Code</h1>
-          <div className="codeButtonContainer">
+      view = 
+        <div className="view subsection">
+          <h1>View</h1>
+          <div className="viewButtonContainer">
             {
               this.props.data.demoLink ?
-              
-                <div><button className="pillButton">Demo</button><br/></div>
+              <a href={this.props.data.demoLink}><button className="pillButton">Demo</button><br/></a> 
               : null
             }
             {
               this.props.data.githubLink ?
-                <button className="pillButton">View on Github</button>
+                <a href={this.props.data.githubLink}><button className="pillButton">View on Github</button></a>
               : null
             }
           </div>
@@ -98,7 +97,7 @@ class FullScreenPage extends Component {
           {technologies}
         </Row>
         <Row>
-          {code}
+          {view}
         </Row>
       </div>
     )

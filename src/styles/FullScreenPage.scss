@@ -1,5 +1,4 @@
 .page {
-    background-color: purple;
     position: absolute;
     left: 0;
     top: 0;
@@ -8,18 +7,20 @@
     z-index: 1;
 
     h1 {
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: 700;
     }
     h2 {
         font-size: 14px;
+        font-weight: 300;
     }
 
     .page-contents {
-        background-color: red;
         margin-top: 100px;
 
         .page-title {
             font-size: 28px;
+            font-weight: 700;
         }
 
         .close-button-wrapper {
@@ -40,18 +41,22 @@
             padding-top: 70px;
 
             .title, .date {
-                font-size: 18px;
+                font-size: 16px;
+                font-weight: 700;
             }
 
             .date {
                 text-align: right;
                 float: right;
+                color: #A9A9A9;
             }
         }
 
         .location {
-            font-size: 18px;
+            font-size: 16px;
             margin-top: -10px;
+            font-weight: 700;
+            color: #A9A9A9
         }
 
         .workDescription {
@@ -68,7 +73,7 @@
             font-size: 13px;
             margin: 0 15px 0;
             padding: 5px 15px 5px;
-            background-color: pink;
+            background-color: #FCE6E6;
             width: 100%;
         }
 
@@ -87,7 +92,7 @@
                 flex-wrap: wrap;
 
                 .technologyPill {
-                    background-color: pink;
+                    background-color: #F4F4F4;
                     font-size: 12px;
                     margin: 5px;
                     border-radius: 500px;
@@ -96,10 +101,10 @@
             }
         }
 
-        .code {
-            .codeButtonContainer {
+        .view {
+            .viewButtonContainer {
                 .pillButton {
-                    background-color: pink;
+                    background-color: #F4F4F4;
                     font-size: 12px;
                     margin: 5px;
                     border-radius: 500px;
