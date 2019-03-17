@@ -127,14 +127,15 @@
             }
 
             .experience-heading {
-                .title, .date {
-                    font-size: 13px;
+                .title {
+                    font-size: 14px;
                 }
-
                 .date {
+                    font-size: 13px;
                     padding-right: 10px;
                 }
             }
+
             .location {
                 font-size: 13px;
                 margin-top: -5px;
@@ -144,7 +145,7 @@
                 padding-top: 15px;
 
                 h2 {
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
         }
