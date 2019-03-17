@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <Container className="header" fluid={true}>
         <Navbar collapseOnSelect expand="sm">
-          <Navbar.Brand href="#home" className="logo">maharsh.</Navbar.Brand>
+          <Navbar.Brand className="logo">maharsh.</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
