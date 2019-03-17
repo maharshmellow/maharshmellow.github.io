@@ -28,12 +28,11 @@ class FullScreenPage extends Component {
           </Row>
 
           <Row>
-            <Col xs={7}>
+            <Col xs={12}>
               <div className="workDescription">
                 <ReactMarkdown source={experience.description}/>
               </div>
             </Col>
-            <Col xs={5}></Col>
           </Row>
         </div>
         )
