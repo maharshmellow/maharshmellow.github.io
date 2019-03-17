@@ -62,6 +62,38 @@
                 font-size: 14px;
             }
         }
+
+        @media screen and (max-width: 480px) {
+            width: 100vw;
+            height: 100vh;
+            margin-top: 0;
+            
+            .page-title {
+                font-size: 22px;
+            }
+
+            .experience-heading {
+                .title, .date {
+                    font-size: 13px;
+                }
+
+                .date {
+                    padding-right: 10px;
+                }
+            }
+            .location {
+                font-size: 13px;
+                margin-top: -5px;
+            }
+
+            .content {
+                padding-top: 15px;
+
+                h2 {
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
 
