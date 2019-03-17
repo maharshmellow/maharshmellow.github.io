@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "b7561e3633c7b8f7e2d1",
-    "url": "/static/css/main.0f581813.chunk.css"
+    "revision": "f78c436fc2666db57590",
+    "url": "/static/css/main.d840494f.chunk.css"
   },
   {
-    "revision": "b7561e3633c7b8f7e2d1",
+    "revision": "f78c436fc2666db57590",
     "url": "/static/js/main.ede3831c.chunk.js"
   },
   {
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/static/media/EuclidCircularA-Semibold-WebM.4757ed13.svg"
   },
   {
-    "revision": "acdfa14d93fcc50a119f23b93ab39c69",
+    "revision": "18b68bda1294977b3cf8e8c347c8cb09",
     "url": "/index.html"
   }
 ];

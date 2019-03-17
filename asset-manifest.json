@@ -1,5 +1,5 @@
 {
-  "main.css": "/static/css/main.0f581813.chunk.css",
+  "main.css": "/static/css/main.d840494f.chunk.css",
   "main.js": "/static/js/main.ede3831c.chunk.js",
   "main.js.map": "/static/js/main.ede3831c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -7,8 +7,8 @@
   "static/js/2.384e634c.chunk.js": "/static/js/2.384e634c.chunk.js",
   "static/js/2.384e634c.chunk.js.map": "/static/js/2.384e634c.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.4be4952bdc3a54e126e5f27e45a8ac9a.js": "/precache-manifest.4be4952bdc3a54e126e5f27e45a8ac9a.js",
+  "precache-manifest.b34cae92ba5ddd4a71257ba1773c3eef.js": "/precache-manifest.b34cae92ba5ddd4a71257ba1773c3eef.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.0f581813.chunk.css.map": "/static/css/main.0f581813.chunk.css.map",
+  "static/css/main.d840494f.chunk.css.map": "/static/css/main.d840494f.chunk.css.map",
   "static/media/index.css": "/static/media/EuclidCircularA-Semibold-WebM.e1a65189.woff"
 }
