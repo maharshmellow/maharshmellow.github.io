@@ -6,6 +6,11 @@ import Col from 'react-bootstrap/Col';
 import ReactMarkdown from "react-markdown";
 class FullScreenPage extends Component {
 
+  // when the page renders, scroll to the top. There is an issue where it maintains the old scroll position when opening this page
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   renderWorkContents = () => {
     var contents = [];
 
