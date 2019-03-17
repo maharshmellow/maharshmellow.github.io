@@ -6,6 +6,7 @@ import TiledSection from "./TiledSection"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import workData from "../data/Work";
+import projectData from "../data/Projects";
 import FullScreenPage from './FullScreenPage';
 
 class Website extends Component {
@@ -13,25 +14,28 @@ class Website extends Component {
     super(props);
 
     this.state = {
-      fullScreenPageData: null
+      fullScreenPageData: null,
+      fullScreenPageType: null
     }
   }
 
-  openFullScreenPage = (pageData) => {
+  openFullScreenPage = (pageData, type) => {
     this.setState({
-      fullScreenPageData: pageData
+      fullScreenPageData: pageData,
+      fullScreenPageType: type
     })
   }
 
   closeFullScreenPage = () => {
     this.setState({
-      fullScreenPageData: null
+      fullScreenPageData: null,
+      fullScreenPageType: null
     })
   }
 
   render() {
     if (this.state.fullScreenPageData) {
-      return (<FullScreenPage onClose={this.closeFullScreenPage} data={this.state.fullScreenPageData}/>);
+      return (<FullScreenPage onClose={this.closeFullScreenPage} data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>);
     } else {
       return (
         <Container className="website">
@@ -42,10 +46,10 @@ class Website extends Component {
             <WelcomeMessage/>
           </Row>
           <Row>
-            <TiledSection title="work." tilesData={workData} onTileClick={this.openFullScreenPage}/>
+            <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
           </Row>
           <Row>
-            <TiledSection title="projects." tilesData={workData} onTileClick={this.openFullScreenPage}/>
+            <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
           </Row>
         </Container>
       );

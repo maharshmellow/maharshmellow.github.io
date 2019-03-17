@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 
 class FullScreenPage extends Component {
 
-  renderContents = () => {
+  renderWorkContents = () => {
     var contents = [];
 
     this.props.data.experiences.forEach(experience => {
@@ -30,7 +30,7 @@ class FullScreenPage extends Component {
 
           <Row>
             <Col xs={7}>
-              <div className="content">
+              <div className="workContent">
                 <ReactMarkdown source={experience.content}/>
               </div>
             </Col>
@@ -41,6 +41,29 @@ class FullScreenPage extends Component {
     });
 
     return contents;
+  }
+
+  renderProjectContents = () => {
+    return (
+      <div>
+        <Row>
+          <Col xs={7}>
+            <div className="projectContent">
+              <ReactMarkdown source={this.props.data.content}/>
+            </div>
+          </Col>
+          <Col xs={5}></Col>
+        </Row>
+      </div>
+    )
+  }
+
+  renderContent = () => {
+    if (this.props.type === "work") {
+      return(this.renderWorkContents());
+    } else {
+      return(this.renderProjectContents());
+    }      
   }
 
   render() {
@@ -59,7 +82,7 @@ class FullScreenPage extends Component {
                   </Col>
               </Row>
               {
-                this.renderContents()
+                this.renderContent()
               }
             </Col>
             <Col sm={2}></Col>
