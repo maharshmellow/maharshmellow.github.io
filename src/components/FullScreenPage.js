@@ -29,8 +29,8 @@ class FullScreenPage extends Component {
 
           <Row>
             <Col xs={7}>
-              <div className="workContent">
-                <ReactMarkdown source={experience.content}/>
+              <div className="workDescription">
+                <ReactMarkdown source={experience.description}/>
               </div>
             </Col>
             <Col xs={5}></Col>
@@ -43,6 +43,42 @@ class FullScreenPage extends Component {
   }
 
   renderProjectContents = () => {
+    var technologies;
+    if (this.props.data.technologies) {
+      technologies = 
+        <div className="technologies subsection">
+          <h1>Technologies</h1>
+          <div className="technologyPillContainer">
+            {
+              this.props.data.technologies.map(technology => {
+                return <div className="technologyPill">{technology}</div>
+              })
+            }
+          </div>
+        </div>
+    }
+
+    var code;
+    if (this.props.data.demoLink || this.props.data.githubLink) {
+      code = 
+        <div className="code subsection">
+          <h1>Code</h1>
+          <div className="codeButtonContainer">
+            {
+              this.props.data.demoLink ?
+              
+                <div><button className="pillButton">Demo</button><br/></div>
+              : null
+            }
+            {
+              this.props.data.githubLink ?
+                <button className="pillButton">View on Github</button>
+              : null
+            }
+          </div>
+        </div>
+    }
+
     return (
       <div>
         {
@@ -53,28 +89,16 @@ class FullScreenPage extends Component {
           : null
         }
         <Row>
-          <Col xs={12}>
-            <div className="projectContent">
-              <ReactMarkdown source={this.props.data.description}/>
-            </div>
-          </Col>
+          <div className="projectContent subsection">
+            <h1>Description</h1>
+            <ReactMarkdown source={this.props.data.description}/>
+          </div>
         </Row>
         <Row>
-          <div className="technologies">
-            <h1>Technologies</h1>
-            <div className="technologyPillContainer">
-              <div className="technologyPill">Google Cloud</div>
-              <div className="technologyPill">Firebase</div>
-              <div className="technologyPill">Amazon S3</div>
-              <div className="technologyPill">another</div>
-              <div className="technologyPill">javascript</div>
-              <div className="technologyPill">another</div>
-              <div className="technologyPill">javascript</div>
-              <div className="technologyPill">another</div>
-              <div className="technologyPill">javascript</div>
-              <div className="technologyPill">another</div>
-            </div>
-          </div>
+          {technologies}
+        </Row>
+        <Row>
+          {code}
         </Row>
       </div>
     )

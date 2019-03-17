@@ -1,16 +1,16 @@
 const projectData = [
     {
         title: "Do",
-        description: "# Description \n ## this is the do description",
-        technologies: ["javascript", "firebase"],
-        notice: "This project is still under active development.",
+        description: "## this is the do description",
+        technologies: ["MongoDB", "Firebase", "Amazon S3"],
+        notice: "This project is still under active development."
     },
     {
         title: "Trakr",
-        description: "# Description \n ## - this is the trakr description",
-        technologies: ["javascript", "firebase"],
-        inDevelopment: false,
-        demoLink: "https://www.maharsh.net/do"
+        description: "## - this is the trakr description",
+        technologies: ["Javascript", "Firebase"],
+        demoLink: "https://www.maharsh.net/do",
+        githubLink: "http://www.github.com/maharshmellow/trakr"
     }
 ];
 
