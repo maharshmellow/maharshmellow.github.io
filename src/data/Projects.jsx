@@ -1,14 +1,15 @@
 const projectData = [
     {
         title: "Do",
-        content: "## - this is some description",
+        description: "# Description \n ## this is the do description",
         technologies: ["javascript", "firebase"],
-        demoLink: "https://www.maharsh.net/do"
+        notice: "This project is still under active development.",
     },
     {
         title: "Trakr",
-        content: "## - this is some description",
+        description: "# Description \n ## - this is the trakr description",
         technologies: ["javascript", "firebase"],
+        inDevelopment: false,
         demoLink: "https://www.maharsh.net/do"
     }
 ];

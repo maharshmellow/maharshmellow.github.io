@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ReactMarkdown from "react-markdown";
-
 class FullScreenPage extends Component {
 
   renderWorkContents = () => {
@@ -46,13 +45,36 @@ class FullScreenPage extends Component {
   renderProjectContents = () => {
     return (
       <div>
+        {
+          this.props.data.notice ? 
+            <Row>
+              <div className="notice">{this.props.data.notice}</div>
+            </Row>
+          : null
+        }
         <Row>
-          <Col xs={7}>
+          <Col xs={12}>
             <div className="projectContent">
-              <ReactMarkdown source={this.props.data.content}/>
+              <ReactMarkdown source={this.props.data.description}/>
             </div>
           </Col>
-          <Col xs={5}></Col>
+        </Row>
+        <Row>
+          <div className="technologies">
+            <h1>Technologies</h1>
+            <div className="technologyPillContainer">
+              <div className="technologyPill">Google Cloud</div>
+              <div className="technologyPill">Firebase</div>
+              <div className="technologyPill">Amazon S3</div>
+              <div className="technologyPill">another</div>
+              <div className="technologyPill">javascript</div>
+              <div className="technologyPill">another</div>
+              <div className="technologyPill">javascript</div>
+              <div className="technologyPill">another</div>
+              <div className="technologyPill">javascript</div>
+              <div className="technologyPill">another</div>
+            </div>
+          </div>
         </Row>
       </div>
     )
@@ -71,8 +93,8 @@ class FullScreenPage extends Component {
       <div className="page">
         <Container fluid={true}>
           <Row>
-            <Col sm={2}></Col>
-            <Col sm={8} className="page-contents">
+            <Col sm={1} md={2}></Col>
+            <Col sm={10} md={8} className="page-contents">
               <Row>
                 <Col xs={10} className="page-title">{this.props.data.title}</Col>
                 <Col xs={2} className="close-button-wrapper">
@@ -85,7 +107,7 @@ class FullScreenPage extends Component {
                 this.renderContent()
               }
             </Col>
-            <Col sm={2}></Col>
+            <Col sm={1} md={2}></Col>
           </Row>
         </Container>
       </div>
