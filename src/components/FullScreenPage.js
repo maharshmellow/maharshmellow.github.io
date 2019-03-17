@@ -90,7 +90,7 @@ class FullScreenPage extends Component {
         <Row>
           <div className="subsection">
             <h1>Description</h1>
-            <ReactMarkdown source={this.props.data.description}/>
+            <ReactMarkdown source={this.props.data.description} escapeHtml={false}/>
           </div>
         </Row>
         <Row>
