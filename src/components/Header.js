@@ -14,9 +14,9 @@ class Header extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
             <Nav>
-              <Nav.Link href="#features">Github</Nav.Link>
-              <Nav.Link href="#pricing">LinkedIn</Nav.Link>
-              <Nav.Link href="#pricing">Contact</Nav.Link>
+              <Nav.Link target="_blank" href="http://www.github.com/maharshmellow">Github</Nav.Link>
+              <Nav.Link target="_blank" href="https://www.linkedin.com/in/maharshpatel/">LinkedIn</Nav.Link>
+              <Nav.Link href="mailto:contact@maharsh.com">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
