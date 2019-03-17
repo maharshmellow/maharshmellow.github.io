@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Website.css';
+import '../styles/Website.scss';
 import Header from "./Header";
 import WelcomeMessage from "./WelcomeMessage";
 import TiledSection from "./TiledSection"
@@ -19,6 +19,9 @@ class Website extends Component {
         </Row>
         <Row>
           <TiledSection title="work." tilesData={workData}/>
+        </Row>
+        <Row>
+          <TiledSection title="projects." tilesData={workData}/>
         </Row>
       </Container>
     );

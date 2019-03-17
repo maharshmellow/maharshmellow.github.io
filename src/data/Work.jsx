@@ -7,7 +7,7 @@ const workData = [
                 date: "May 2019 - Aug 2019",
                 location: "Los Angeles, CA",
                 team: "Google Drive",
-                content: "## this is topic #1 \n ## this is topic #2"
+                content: "## - this is topic #1 \n ## - this is topic #2"
             },
             {
                 title: "Software Engineering Intern",

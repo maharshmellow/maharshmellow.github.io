@@ -1,0 +1,70 @@
+.page {
+    background-color: purple;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    h1 {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 12px;
+    }
+
+    .page-contents {
+        background-color: red;
+        margin-top: 100px;
+
+        .page-title {
+            font-size: 28px;
+        }
+
+        .close-button-wrapper {
+            text-align: right;
+            margin-top: 4px;
+            margin-left: -5px;
+            padding: 0;
+
+            .close-button {
+                border: none;
+                background-color: inherit;
+                outline: 0 !important;
+                cursor: pointer;
+            }
+        }
+
+        .experience-heading {
+            padding-top: 70px;
+
+            .title, .date {
+                font-size: 18px;
+            }
+
+            .date {
+                text-align: right;
+                float: right;
+            }
+        }
+
+        .location {
+            font-size: 18px;
+            margin-top: -10px;
+        }
+
+        .content {
+            padding-top: 20px;
+        
+            h2 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
