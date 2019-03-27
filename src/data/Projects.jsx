@@ -7,7 +7,7 @@ const projectData = [
     },
     {
         title: "Trakr",
-        description: "## Trakr is a web application that keeps track of other websites and notifies the user by email if a change is detected. Could be used for job posting pages, scholarship pages, or anything that the user doesn't want to keep checking. Ex: when a new job posting is added, it would email the user saying that there was an update.",
+        description: "## Trakr is a web application that keeps track of other websites and notifies the user by email if a change is detected. This could be used for job posting pages, scholarship pages, or anything that the user doesn't want to keep checking. Ex: when a new job posting is added, it would email the user saying that there was an update on the website.",
         technologies: ["Django", "Amazon DynamoDB", "Firebase Authentication", "SendGrid"],
         demoLink: "https://trakr.maharsh.net",
         githubLink: "http://www.github.com/maharshmellow/trakr"
@@ -21,7 +21,7 @@ const projectData = [
     },
     {
         title: "Group Study",
-        description: "## A study timer that is different from the rest of the tomato timer apps because this allows multiple browsers to sync. The timer is synced between all connected users, and when one person pauses/plays/skips, it does that action on all connected browsers using sockets.",
+        description: "## Group Study is a study timer. But unlike most other popular tomato timer apps, this allows multiple browsers to sync. The timer is synced between all connected users, and when one person pauses/plays/skips, it does that action on all connected browsers using sockets.",
         technologies: ["Flask", "SocketIO", "Heroku"],
         demoLink: "https://study.maharsh.net",
         githubLink: "https://github.com/maharshmellow/groupstudy"
@@ -41,7 +41,7 @@ const projectData = [
     },
     {
         title: "Property Searcher",
-        description: "## Shows the updated prices and other information of all Edmonton properties.",
+        description: "## Shows the property values and other information of all Edmonton properties.",
         technologies: ["Django", "Edmonton Open Data APIs"],
         notice: "The data used for this project has not been updated since 2017.",
         demoLink: "https://properties.maharsh.net/",
@@ -64,7 +64,7 @@ const projectData = [
     },
     {
         title: "Sprintr",
-        description: "## A website that allows a user to upload a book and read it using a Rapid Serial Visual Representation Method similar to the one offered by Spritz Inc. This project no longer works after a chrome update removed a functionality it depended on.",
+        description: "## A website that allows a user to upload a book and read it using a Rapid Serial Visual Representation Method similar to the one offered by Spritz Inc. The book can be imported in most popular book formats like EPUB and MOBI.",
         notice: "Due to a chrome update breaking the changes, the live demo is no longer active. There is however a gif of the app in action in the Github repo.",
         githubLink: "https://github.com/maharshmellow/sprintr"
     },
