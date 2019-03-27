@@ -32,7 +32,7 @@ const workData = [
             },
             {
                 title: "Metadata Assistant",
-                date: "May '17 - Sep '18",
+                date: "May '17 - Sep '17",
                 location: "Edmonton, AB",
                 description: "## - Created a Django web application that Universities across Canada will use to convert their library metadata into Linked Data \n ## - Created a SPARQL endpoint to query the Library of Congress and University metadata \n ## - Gained experience with Linked Data, MARC, SPARQL, RDF, Apache Jena Fuseki, and Virtuoso"
             },
