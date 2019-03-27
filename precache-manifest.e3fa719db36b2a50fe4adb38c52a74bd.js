@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9e18b81e30c2acd33353",
+    "revision": "b1597411f40b42b94793",
     "url": "/static/css/main.d50765c7.chunk.css"
   },
   {
-    "revision": "9e18b81e30c2acd33353",
-    "url": "/static/js/main.ede3831c.chunk.js"
+    "revision": "b1597411f40b42b94793",
+    "url": "/static/js/main.55cf0dd2.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -64,19 +64,19 @@ self.__precacheManifest = [
     "url": "/static/media/EuclidCircularA-Semibold-WebM.40416b8f.ttf"
   },
   {
-    "revision": "89495c689ce575dca9dbd8f18103cba9",
-    "url": "/static/media/EuclidCircularA-Medium-WebS.89495c68.svg"
-  },
-  {
     "revision": "afdd4f09c9e040cb285a3f1c69ea54aa",
     "url": "/static/media/EuclidCircularA-Regular-WebS.afdd4f09.svg"
+  },
+  {
+    "revision": "89495c689ce575dca9dbd8f18103cba9",
+    "url": "/static/media/EuclidCircularA-Medium-WebS.89495c68.svg"
   },
   {
     "revision": "4757ed131b3a5287fce040156ee89029",
     "url": "/static/media/EuclidCircularA-Semibold-WebM.4757ed13.svg"
   },
   {
-    "revision": "e5d76213ef6ca9fef4dab7e7d9a04904",
+    "revision": "8dfd2e420757d9877c6ded034739abe2",
     "url": "/index.html"
   }
 ];
