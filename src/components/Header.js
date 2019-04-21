@@ -16,7 +16,7 @@ class Header extends Component {
             <Nav>
               <Nav.Link target="_blank" href="http://www.github.com/maharshmellow">Github</Nav.Link>
               <Nav.Link target="_blank" href="https://www.linkedin.com/in/maharshpatel/">LinkedIn</Nav.Link>
-              <Nav.Link href="mailto:contact@maharsh.com">Contact</Nav.Link>
+              <Nav.Link href="mailto:contact@maharsh.net">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
