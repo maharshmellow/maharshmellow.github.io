@@ -14,7 +14,7 @@ class WelcomeMessage extends Component {
             Hey there *waves* <br/><br/>
 
             I am Maharsh <br/>
-            A Computing Science Student based in Edmonton, Canada <br/><br/>
+            A Computing Science student based in Edmonton, Canada <br/><br/>
 
             Check out my work below
           </Col>
