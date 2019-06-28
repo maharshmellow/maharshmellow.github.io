@@ -4,6 +4,12 @@ const workData = [
         experiences: [
             {
                 title: "Software Engineering Intern",
+                date: "May '19 - Present",
+                location: "Los Angeles, CA",
+                description: "## - Working on Google Drive"
+            },
+            {
+                title: "Software Engineering Intern",
                 date: "Mar '18 - Jun '18",
                 location: "Mountain View, CA",
                 description: "## - Applied Machine Learning models to enable Human Computer Interaction on a future product \n ## - Worked with C++ and Tensorflow to extract body keypoints from a live input stream, and enabled low latency, real-time analysis using ML accelerators \n ## - Used Typescript to create a canvas game to demonstrate the high accuracy and low latency interaction that the internship project can enable"
