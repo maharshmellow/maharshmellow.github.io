@@ -6,7 +6,7 @@ const workData = [
                 title: "Software Engineering Intern",
                 date: "May '19 - Present",
                 location: "Los Angeles, CA",
-                description: "## - Working on Google Drive"
+                description: "## - Worked with Java to implement a debugging toolkit for Google Drive batch processes \n ## - Designed and developed a system that allowed data from thousands of live processes to be organized in a central location, leading to an enhanced developer experience and a higher confidence in the reliability of the batch processing framework \n ## - Created a pipeline to identify and remove files with missing metadata across all Google Drive accounts"
             },
             {
                 title: "Software Engineering Intern",
@@ -23,7 +23,7 @@ const workData = [
                 title: "Software Developer Co-op",
                 date: "Jun '18 - Apr '19",
                 location: "Edmonton, AB",
-                description: "## - Working with React to develop smoother onboarding experiences for new Quickbooks Online customers \n ## - Implemented a mandatory in-product phone collection dialog to increase the security profile of every 1 in 10 at-risk customers \n ## - Created an in-product password verification system to protect access from SSO users to pages containing sensitive data \n ## - Implemented a Visual Regression testing framework to enable the detection of small visual differences between iterations \n ## - Gained experience with unit and automated system testing, as well as A/B testing on live users through feature experiments"
+                description: "## - Worked with React to develop smoother on-boarding experiences for ~5 million Quickbooks Online customers \n ## - Designed and implemented an in-product phone collection dialog to increase the security profile of every 1 in 10 at-risk customers \n ## - Developed an in-product password verification system to protect access to pages containing sensitive data \n ## - Ran and managed A/B tests on live customers for a variety of feature experiments"
             }
         ]
     },
@@ -34,7 +34,7 @@ const workData = [
                 title: "Research Assistant",
                 date: "Sep '17 - Mar '18",
                 location: "Edmonton, AB",
-                description: "## - Converted the Basic Concepts Classification into Linked Open Data using Python"
+                description: "## - Worked with an interdisciplinary team to convert the Basic Concepts Classification into Linked Open Data using Python"
             },
             {
                 title: "Metadata Assistant",
