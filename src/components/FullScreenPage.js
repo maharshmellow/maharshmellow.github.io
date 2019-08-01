@@ -120,8 +120,7 @@ class FullScreenPage extends Component {
       <div className="page">
         <Container fluid={true}>
           <Row>
-            <Col sm={1} md={2}></Col>
-            <Col sm={10} md={8} className="page-contents">
+            <Col sm={12} md={12} className="page-contents">
               <Row>
                 <Col xs={10} className="page-title">{this.props.data.title}</Col>
                 <Col xs={2} className="close-button-wrapper">
@@ -134,7 +133,6 @@ class FullScreenPage extends Component {
                 this.renderContent()
               }
             </Col>
-            <Col sm={1} md={2}></Col>
           </Row>
         </Container>
       </div>

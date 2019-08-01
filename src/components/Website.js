@@ -35,7 +35,11 @@ class Website extends Component {
 
   render() {
     if (this.state.fullScreenPageData) {
-      return (<FullScreenPage onClose={this.closeFullScreenPage} data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>);
+      return (
+        <Container className="website">
+          <FullScreenPage onClose={this.closeFullScreenPage} data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>
+        </Container>
+      );
     } else {
       return (
         <Container className="website">
