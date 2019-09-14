@@ -20,10 +20,18 @@ class Website extends Component {
   }
 
   openFullScreenPage = (pageData, type) => {
+    // this push state won't make any change to the URL but will allow us to detect back button click
+    window.history.pushState({}, "", `/`);  
+    
     this.setState({
       fullScreenPageData: pageData,
       fullScreenPageType: type
-    })
+    });
+
+    // when the back button is clocked, close the full screen page to get a traditional multi-page app feel
+    window.onpopstate = (e) => {
+      this.closeFullScreenPage();
+    }
   }
 
   closeFullScreenPage = () => {
@@ -37,7 +45,7 @@ class Website extends Component {
     if (this.state.fullScreenPageData) {
       return (
         <Container className="website">
-          <FullScreenPage onClose={this.closeFullScreenPage} data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>
+          <FullScreenPage data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>
         </Container>
       );
     } else {
