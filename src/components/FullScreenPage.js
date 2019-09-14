@@ -124,9 +124,6 @@ class FullScreenPage extends Component {
               <Row>
                 <Col xs={10} className="page-title">{this.props.data.title}</Col>
                 <Col xs={2} className="close-button-wrapper">
-                  <button className="close-button" onClick={() => this.props.onClose()}>
-                    <i className="material-icons">close</i>
-                  </button>
                   </Col>
               </Row>
               {
