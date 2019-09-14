@@ -4,7 +4,7 @@ const workData = [
         experiences: [
             {
                 title: "Software Engineering Intern",
-                date: "May '19 - Present",
+                date: "May '19 - Aug '19",
                 location: "Los Angeles, CA",
                 description: "## - Worked with Java to implement a debugging toolkit for Google Drive batch processes \n ## - Designed and developed a system that allowed data from thousands of live processes to be organized in a central location, leading to an enhanced developer experience and a higher confidence in the reliability of the batch processing framework \n ## - Created a pipeline to identify and remove files with missing metadata across all Google Drive accounts"
             },

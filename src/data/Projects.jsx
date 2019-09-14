@@ -6,18 +6,18 @@ const projectData = [
         notice: "This project is still under active development."
     },
     {
-        title: "Trakr",
-        description: "## Trakr is a web application that keeps track of other websites and notifies the user by email if a change is detected. This could be used for job posting pages, scholarship pages, or anything that the user doesn't want to keep checking. Ex: when a new job posting is added, it would email the user saying that there was an update on the website.",
-        technologies: ["Django", "Amazon DynamoDB", "Firebase Authentication", "SendGrid"],
-        demoLink: "https://trakr.maharsh.net",
-        githubLink: "http://www.github.com/maharshmellow/trakr"
-    },
-    {
         title: "Live Transit",
         description: "## Shows the live location of all the Edmonton Transit System Busses and their estimated arrival times at all stops on the trip.",
         technologies: ["Flask", "Google Transit", "Google Maps", "Edmonton Open Data APIs"],
         demoLink: "https://transit.maharsh.net",
         githubLink: "http://www.github.com/maharshmellow/livetransit"
+    },
+    {
+        title: "Trakr",
+        description: "## Trakr is a web application that keeps track of other websites and notifies the user by email if a change is detected. This could be used for job posting pages, scholarship pages, or anything that the user doesn't want to keep checking. Ex: when a new job posting is added, it would email the user saying that there was an update on the website.",
+        technologies: ["Django", "Amazon DynamoDB", "Firebase Authentication", "SendGrid"],
+        demoLink: "https://trakr.maharsh.net",
+        githubLink: "http://www.github.com/maharshmellow/trakr"
     },
     {
         title: "Group Study",
