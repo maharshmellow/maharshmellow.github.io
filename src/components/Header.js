@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import '../styles/Header.scss';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import React, { Component } from "react";
+import "../styles/Header.scss";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 class Header extends Component {
   render() {

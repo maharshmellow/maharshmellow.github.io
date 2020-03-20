@@ -60,17 +60,15 @@ class Website extends Component {
               <WelcomeMessage/>
             </Row>
           </Fade>
-            <Row>
-              <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
-            </Row>
-            <Row>
-              <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
-            </Row>
+          <Row>
+            <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
+          </Row>
+          <Row>
+            <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
+          </Row>
         </Container>
       );
     }
-
-    
   }
 }
 
