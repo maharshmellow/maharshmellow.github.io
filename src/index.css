@@ -5,18 +5,12 @@
        url('fonts/EuclidCircularB-Regular-WebXL.woff') format('woff'); /* Pretty Modern Browsers */
 }
 
-@font-face {
-  font-family: 'euclid';
-  font-weight: 500;
-  src: url('fonts/EuclidCircularB-Medium-WebXL.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/EuclidCircularB-Medium-WebXL.woff') format('woff'); /* Pretty Modern Browsers */
-}
 
 @font-face {
   font-family: 'euclid';
   font-weight: 700;
   src: url('fonts/EuclidCircularB-Semibold-WebXL.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/EuclidCircularB-Semibold-WebXL.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/EuclidCircularB-Semibold-WebXL.woff') format('woff'); /* Pretty Modern Browsers */
 }
 
 

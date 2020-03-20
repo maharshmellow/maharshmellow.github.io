@@ -10,12 +10,12 @@ class WelcomeMessage extends Component {
       <Container className="welcome-message" fluid={true}>
         <Row>
           <Col sm={12}>
-            Hey there <span role="img" aria-label="wave" className="wave">👋</span><br/><br/>
+            Hey there <span role="img" aria-label="wave" id="wave">👋</span><br/><br/>
 
             I am Maharsh <br/>
             A Computing Science student based in Edmonton, Canada <br/><br/>
 
-            Check out my work below
+            <span id="check-out-message">Check out my work below</span>
           </Col>
         </Row>
       </Container>
