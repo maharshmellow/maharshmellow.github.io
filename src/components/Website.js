@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import '../styles/Website.scss';
+import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
+import "../styles/Website.scss";
 import Header from "./Header";
 import WelcomeMessage from "./WelcomeMessage";
 import TiledSection from "./TiledSection"
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import workData from "../data/Work";
 import projectData from "../data/Projects";
-import FullScreenPage from './FullScreenPage';
+import FullScreenPage from "./FullScreenPage";
 
 class Website extends Component {
   constructor(props) {
@@ -51,18 +52,25 @@ class Website extends Component {
     } else {
       return (
         <Container className="website">
-          <Row>
-            <Header/>
-          </Row>
-          <Row>
-            <WelcomeMessage/>
-          </Row>
-          <Row>
-            <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
-          </Row>
-          <Row>
-            <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
-          </Row>
+          <Fade bottom cascade distance="40px">
+            <Row>
+              <Header/>
+            </Row>
+            <Row>
+              <WelcomeMessage/>
+            </Row>
+          </Fade>
+          <Fade bottom cascade distance="30px">
+            <Row>
+              <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
+            </Row>
+          </Fade>
+          <Fade bottom cascade distance="20px">
+            <Row>
+              <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
+            </Row>
+          </Fade>
+          
         </Container>
       );
     }
