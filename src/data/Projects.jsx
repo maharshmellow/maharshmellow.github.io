@@ -4,6 +4,7 @@ const projectData = [
         description: '## Castroom is a Podcast Search Engine. It gathers data using a distributed crawler mechanism running on Google Kubernetes Engine and then saves the results to Amazon Elasticsearch service. A React app presents a Search UI where ~250k podcasts can be searched. Currently, it only searches by podcast names but in the future, I would like to index all episodes (including descriptions) and create some type of alert mechanism where users can be alerted if a specified word appears in a podcast.  <img width="100%" alt="Search Engine Image" src="https://user-images.githubusercontent.com/4590693/72404218-c4908a00-3711-11ea-9bd1-c3c6a1bbb4c5.png"><img width="100%" alt="Results Image" src="https://user-images.githubusercontent.com/4590693/72404219-c4908a00-3711-11ea-87ea-762630172249.png">',
         technologies: ["Google Kubernetes Engine", "Amazon Elasticsearch Service", "Amazon Simple Queue Service", "Firebase Hosting", "Heroku", "Docker", "React", "Node.js", "LevelDB", "Datadog"],
         demoLink: "https://castroom.web.app",
+        githubLink: "http://www.github.com/maharshmellow/castroom"
     },
     {
         title: "Do",
