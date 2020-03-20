@@ -103,7 +103,7 @@
         .view {
             .viewButtonContainer {
                 .pillButton {
-                    background-color: rgb(227, 227, 227);
+                    background-color: rgb(237, 237, 237);
                     font-size: 1.0em;
                     margin: 5px;
                     border-radius: 500px;
@@ -112,6 +112,11 @@
                     border: 0;
                     width: 150px;
                     cursor: pointer;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
                 }
             }
         }

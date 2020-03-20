@@ -79,7 +79,7 @@ class FullScreenPage extends Component {
             }
             {
               this.props.data.githubLink ?
-                <a href={this.props.data.githubLink}><button className="pillButton">View on Github</button></a>
+                <a href={this.props.data.githubLink}><button className="pillButton">Github</button></a>
               : null
             }
           </div>
