@@ -1,3 +1,3 @@
 ### Code for maharsh.net
 
-![](https://travis-ci.org/maharshmellow/website.svg?branch=master)
+[![Build Status](https://travis-ci.org/maharshmellow/maharshmellow.github.io.svg?branch=develop)](https://travis-ci.org/maharshmellow/maharshmellow.github.io)
