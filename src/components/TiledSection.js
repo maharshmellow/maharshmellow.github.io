@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import '../styles/TiledSection.scss';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React, { Component } from "react";
+import "../styles/TiledSection.scss";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 class TiledSection extends Component {
@@ -12,7 +12,7 @@ class TiledSection extends Component {
     var tiles = [];
     tilesData.forEach(tile => {
       tiles.push(
-        <Col sm={4} className={"tile"}>
+        <Col sm={4} className={"tile"} key={tile.title}>
           <button onClick={() => this.props.onTileClick(tile)} className="tile-button">{tile.title}</button>
         </Col>
       );
@@ -23,18 +23,18 @@ class TiledSection extends Component {
 
   render() {
     return (
-        <Container className="tiled-section" fluid={true}>
-          <Row>
-            <Col sm={4} className="section-title">  
-              {this.props.title}
-            </Col>
-          </Row>
-          <Row className={"tiles"}>
-            {
-              this.getTiles()
-            }
-          </Row>
-        </Container>
+      <Container className="tiled-section" fluid={true}>
+        <Row>
+          <Col sm={4} className="section-title">  
+            {this.props.title}
+          </Col>
+        </Row>
+        <Row className={"tiles"}>
+          {
+            this.getTiles()
+          }
+        </Row>
+      </Container>
     );
   }
 }
