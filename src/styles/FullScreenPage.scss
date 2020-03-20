@@ -5,11 +5,11 @@
     z-index: 1;
 
     h1 {
-        font-size: 18px;
+        font-size: 1.2em;
         font-weight: 700;
     }
     h2 {
-        font-size: 14px;
+        font-size: 1.0em;
         font-weight: 300;
     }
 
@@ -18,7 +18,7 @@
         margin-bottom: 100px;
 
         .page-title {
-            font-size: 28px;
+            font-size: 2em;
             font-weight: 700;
         }
 
@@ -39,7 +39,7 @@
             padding-top: 70px;
 
             .title, .date {
-                font-size: 18px;
+                font-size: 1.2em;
                 font-weight: 700;
             }
 
@@ -51,7 +51,7 @@
         }
 
         .location {
-            font-size: 18px;
+            font-size: 1.2em;
             margin-top: -10px;
             font-weight: 700;
             color: #A9A9A9
@@ -104,7 +104,7 @@
             .viewButtonContainer {
                 .pillButton {
                     background-color: #F4F4F4;
-                    font-size: 12px;
+                    font-size: 1.0em;
                     margin: 5px;
                     border-radius: 500px;
                     padding: 5px 10px 5px;

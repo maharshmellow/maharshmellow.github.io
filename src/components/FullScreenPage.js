@@ -131,7 +131,7 @@ class FullScreenPage extends Component {
         <Container fluid={true}>
           <Row>
             <Col sm={12} md={12} className="page-contents">
-              <Fade bottom distance="40px">
+              <Fade left distance="40px">
                 <Row>
                   <Col xs={10} className="page-title">{this.props.data.title}</Col>
                   <Col xs={2} className="close-button-wrapper" />
