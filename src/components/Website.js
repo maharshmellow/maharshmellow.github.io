@@ -60,17 +60,12 @@ class Website extends Component {
               <WelcomeMessage/>
             </Row>
           </Fade>
-          <Fade bottom cascade distance="30px">
             <Row>
               <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
             </Row>
-          </Fade>
-          <Fade bottom cascade distance="20px">
             <Row>
               <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
             </Row>
-          </Fade>
-          
         </Container>
       );
     }

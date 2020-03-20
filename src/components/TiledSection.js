@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 import "../styles/TiledSection.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -24,16 +25,20 @@ class TiledSection extends Component {
   render() {
     return (
       <Container className="tiled-section" fluid={true}>
-        <Row>
-          <Col sm={4} className="section-title">  
-            {this.props.title}
-          </Col>
-        </Row>
-        <Row className={"tiles"}>
-          {
-            this.getTiles()
-          }
-        </Row>
+        <Fade left duration={1000} distance="50px">
+          <Row>
+            <Col sm={4} className="section-title">  
+              {this.props.title}
+            </Col>
+          </Row>
+        </Fade>
+        <Fade bottom duration={800} distance="50px">
+          <Row className={"tiles"}>
+            {
+              this.getTiles()
+            }
+          </Row>
+        </Fade>
       </Container>
     );
   }
