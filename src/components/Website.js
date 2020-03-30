@@ -52,16 +52,16 @@ class Website extends Component {
     } else {
       return (
         <Container className="website">
-          <Fade top duration={1000} distance="50px" delay={300}>
+          <Fade top duration={1000} distance="50px" delay={1200}>
             <Row>
               <Header/>
             </Row>
           </Fade>
-          <Fade bottom cascade distance="40px">
+          {/* <Fade bottom cascade distance="40px"> */}
             <Row>
               <WelcomeMessage/>
             </Row>
-          </Fade>
+          {/* </Fade> */}
           <Row>
             <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
           </Row>
