@@ -1,8 +1,17 @@
-.page {
-    width: 100%;
-    max-width: 1000px;
-    height: 100vh;
-    z-index: 1;
+.details-modal {
+    background-color: white;
+
+    .modal-dialog {
+        max-width: 1000px;
+
+        .modal-content {
+            border: none;
+
+            .modal-header {
+                border: none;
+            }
+        }
+    }
 
     h1 {
         font-size: 1.2em;
@@ -13,8 +22,9 @@
         font-weight: 300;
     }
 
+
     .page-contents {
-        margin-top: 100px;
+        margin-top: 10px;
         margin-bottom: 100px;
 
         .page-title {
@@ -122,7 +132,7 @@
         }
 
         @media screen and (max-width: 580px) {
-            width: 100vw;
+            // width: 100vw;
             margin-top: 10px;
             position: absolute;
             top: 0;
@@ -156,7 +166,3 @@
         }
     }
 }
-
-
-
-

@@ -6,12 +6,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ReactMarkdown from "react-markdown";
+import Modal from "react-bootstrap/Modal";
+
 class FullScreenPage extends Component {
 
-  // when the page renders, scroll to the top. There is an issue where it maintains the old scroll position when opening this page
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
+  // // when the page renders, scroll to the top. There is an issue where it maintains the old scroll position when opening this page
+  // componentDidMount() {
+  //   window.scrollTo(0, 0)
+  // }
 
   renderWorkContents = () => {
     var contents = [];
@@ -120,30 +122,35 @@ class FullScreenPage extends Component {
   renderContent = () => {
     if (this.props.type === "work") {
       return(this.renderWorkContents());
-    } else {
+    } else if (this.props.type === "project") {
       return(this.renderProjectContents());
-    }      
+    } else {
+      return null;
+    }     
   }
 
   render() {
     return (
-      <div className="page">
-        <Container fluid={true}>
-          <Row>
-            <Col sm={12} md={12} className="page-contents">
-              <Fade left distance="40px">
-                <Row>
-                  <Col xs={10} className="page-title">{this.props.data.title}</Col>
-                  <Col xs={2} className="close-button-wrapper" />
-                </Row>
-              </Fade>
-              {
-                this.renderContent()
-              }
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Modal show={this.props.data !== null} className="details-modal">
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <Container>
+            <Row>
+              <Col sm={12} md={12} className="page-contents">
+                <Fade left distance="40px">
+                  <Row>
+                    <Col xs={10} className="page-title">{"title"}</Col>
+                    <Col xs={2} className="close-button-wrapper" />
+                  </Row>
+                </Fade>
+                {
+                  this.renderContent()
+                }
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
+      </Modal>
     );
   }
 }

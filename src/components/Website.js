@@ -29,10 +29,10 @@ class Website extends Component {
       fullScreenPageType: type
     });
 
-    // when the back button is clocked, close the full screen page to get a traditional multi-page app feel
-    window.onpopstate = (e) => {
-      this.closeFullScreenPage();
-    }
+    // // when the back button is clocked, close the full screen page to get a traditional multi-page app feel
+    // window.onpopstate = (e) => {
+    //   this.closeFullScreenPage();
+    // }
   }
 
   closeFullScreenPage = () => {
@@ -43,34 +43,27 @@ class Website extends Component {
   }
 
   render() {
-    if (this.state.fullScreenPageData) {
-      return (
-        <Container className="website">
-          <FullScreenPage data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>
-        </Container>
-      );
-    } else {
-      return (
-        <Container className="website">
-          <Fade top duration={1000} distance="50px" delay={1200}>
-            <Row>
-              <Header/>
-            </Row>
-          </Fade>
-          {/* <Fade bottom cascade distance="40px"> */}
-            <Row>
-              <WelcomeMessage/>
-            </Row>
-          {/* </Fade> */}
+    return (
+      <Container className="website">
+        <Fade top duration={1000} distance="50px" delay={1200}>
           <Row>
-            <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
+            <Header/>
           </Row>
+        </Fade>
+        {/* <Fade bottom cascade distance="40px"> */}
           <Row>
-            <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
+            <WelcomeMessage/>
           </Row>
-        </Container>
-      );
-    }
+        {/* </Fade> */}
+        <Row>
+          <TiledSection title="work." tilesData={workData} onTileClick={(data) => this.openFullScreenPage(data, "work")}/>
+        </Row>
+        <Row>
+          <TiledSection title="projects." tilesData={projectData} onTileClick={(data) => this.openFullScreenPage(data, "project")}/>
+        </Row>
+        <FullScreenPage data={this.state.fullScreenPageData} type={this.state.fullScreenPageType}/>
+      </Container>
+    );
   }
 }
 
