@@ -52,10 +52,12 @@ class Website extends Component {
     } else {
       return (
         <Container className="website">
-          <Fade bottom cascade distance="40px">
+          <Fade top duration={1000} distance="50px" delay={300}>
             <Row>
               <Header/>
             </Row>
+          </Fade>
+          <Fade bottom cascade distance="40px">
             <Row>
               <WelcomeMessage/>
             </Row>
