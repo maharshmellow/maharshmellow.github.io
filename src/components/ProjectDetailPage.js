@@ -1,56 +1,14 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import HeadShake from "react-reveal/HeadShake";
-import "../styles/FullScreenPage.scss";
+import "../styles/DetailPage.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ReactMarkdown from "react-markdown";
 import Modal from "react-bootstrap/Modal";
 
-class FullScreenPage extends Component {
-
-  // // when the page renders, scroll to the top. There is an issue where it maintains the old scroll position when opening this page
-  // componentDidMount() {
-  //   window.scrollTo(0, 0)
-  // }
-
-  renderWorkContents = () => {
-    var contents = [];
-
-    this.props.data.experiences.forEach(experience => {
-      contents.push(
-        <Fade bottom distance="20px" key={experience.date}>
-          <div>
-            <Row className="experience-heading">
-              <Col xs={7}>
-                <div className="title">{experience.title}</div>
-              </Col>
-              <Col xs={5}>
-                <div className="date">{experience.date}</div>
-              </Col>
-            </Row>
-            <Row>
-              <Col xs={7}>
-                <div className="location">{experience.location}</div>
-              </Col>
-              <Col xs={5}></Col>
-            </Row>
-
-            <Row>
-              <Col xs={12}>
-                <div className="workDescription">
-                  <ReactMarkdown source={experience.description}/>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </Fade>
-        )
-    });
-
-    return contents;
-  }
+class ProjectDetailPage extends Component {
 
   renderProjectContents = () => {
     var technologies;
@@ -119,23 +77,14 @@ class FullScreenPage extends Component {
     )
   }
 
-  renderContent = () => {
-    if (this.props.type === "work") {
-      return(this.renderWorkContents());
-    } else if (this.props.type === "project") {
-      return(this.renderProjectContents());
-    } else {
-      return null;
-    }     
-  }
-
   render() {
     let title = "";
     if (this.props.data && this.props.data.title) {
       title = this.props.data.title;
     }
+
     return (
-      <Modal show={this.props.data !== null} className="details-modal">
+      <Modal show={this.props.show} className="details-modal">
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <Container>
@@ -148,7 +97,9 @@ class FullScreenPage extends Component {
                   </Row>
                 </Fade>
                 {
-                  this.renderContent()
+                  this.props.show ?
+                    this.renderProjectContents()
+                  : null
                 }
               </Col>
             </Row>
@@ -159,4 +110,4 @@ class FullScreenPage extends Component {
   }
 }
 
-export default FullScreenPage;
+export default ProjectDetailPage;
