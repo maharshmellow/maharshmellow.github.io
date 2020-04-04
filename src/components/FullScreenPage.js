@@ -130,6 +130,10 @@ class FullScreenPage extends Component {
   }
 
   render() {
+    let title = "";
+    if (this.props.data && this.props.data.title) {
+      title = this.props.data.title;
+    }
     return (
       <Modal show={this.props.data !== null} className="details-modal">
         <Modal.Header closeButton></Modal.Header>
@@ -139,7 +143,7 @@ class FullScreenPage extends Component {
               <Col sm={12} md={12} className="page-contents">
                 <Fade left distance="40px">
                   <Row>
-                    <Col xs={10} className="page-title">{"title"}</Col>
+                    <Col xs={10} className="page-title">{title}</Col>
                     <Col xs={2} className="close-button-wrapper" />
                   </Row>
                 </Fade>

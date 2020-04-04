@@ -1,8 +1,16 @@
 .details-modal {
     background-color: white;
+    transition: none !important;
+
+    .fade {
+        opacity: 1 !important;
+        transition: opacity 0s !important;
+    }
 
     .modal-dialog {
         max-width: 1000px;
+        transition: none !important;
+        margin: none !important;
 
         .modal-content {
             border: none;
@@ -165,4 +173,8 @@
             }
         }
     }
+}
+
+.modal-backdrop {
+    opacity: 0 !important;
 }

@@ -30,9 +30,9 @@ class Website extends Component {
     });
 
     // // when the back button is clocked, close the full screen page to get a traditional multi-page app feel
-    // window.onpopstate = (e) => {
-    //   this.closeFullScreenPage();
-    // }
+    window.onpopstate = (e) => {
+      this.closeFullScreenPage();
+    }
   }
 
   closeFullScreenPage = () => {
