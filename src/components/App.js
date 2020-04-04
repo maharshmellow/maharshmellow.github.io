@@ -68,12 +68,16 @@ class App extends Component {
         <Row>
           <WelcomeMessage/>
         </Row>
-        <Row>
-          <TiledSection title="work." tilesData={workData} onTileClick={this.openWorkDetailPage}/>
-        </Row>
-        <Row>
-          <TiledSection title="projects." tilesData={projectData} onTileClick={this.openProjectDetailPage}/>
-        </Row>
+        <Fade bottom duration={1000} distance="50px" delay={1200}>
+          <>
+          <Row>
+            <TiledSection title="work." tilesData={workData} onTileClick={this.openWorkDetailPage}/>
+          </Row>
+          <Row>
+            <TiledSection title="projects." tilesData={projectData} onTileClick={this.openProjectDetailPage}/>
+          </Row>
+          </>
+        </Fade>
         <WorkDetailPage show={this.state.workDetailPageVisible} data={this.state.detailPageData} />
         <ProjectDetailPage show={this.state.projectDetailPageVisible} data={this.state.detailPageData} />
       </Container>
