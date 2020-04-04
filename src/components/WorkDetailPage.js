@@ -55,7 +55,6 @@ class WorkDetailPage extends Component {
 
     return (
       <Modal show={this.props.show} className="details-modal">
-        <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <Container>
             <Row>
