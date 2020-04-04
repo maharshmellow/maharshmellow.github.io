@@ -25,16 +25,20 @@ class TiledSection extends Component {
   render() {
     return (
       <Container className="tiled-section" fluid={true}>
-        <Row>
-          <Col sm={4} className="section-title">  
-            {this.props.title}
-          </Col>
-        </Row>
-        <Row className={"tiles"}>
-          {
-            this.getTiles()
-          }
-        </Row>
+        <Fade bottom duration={1000} distance="50px" delay={100}>
+          <Row>
+            <Col sm={4} className="section-title">  
+              {this.props.title}
+            </Col>
+          </Row>
+        </Fade>
+        <Fade bottom duration={1000} distance="50px" delay={100}>
+          <Row className={"tiles"}>
+            {
+              this.getTiles()
+            }
+          </Row>
+        </Fade>
       </Container>
     );
   }

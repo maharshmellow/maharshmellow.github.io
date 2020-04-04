@@ -60,7 +60,7 @@ class App extends Component {
   render() {
     return (
       <Container className="website">
-        <Fade top duration={1000} distance="50px" delay={1200}>
+        <Fade top duration={1000} distance="50px" delay={2500}>
           <Row>
             <Navbar/>
           </Row>
@@ -68,14 +68,14 @@ class App extends Component {
         <Row>
           <WelcomeMessage/>
         </Row>
-        <Fade bottom duration={1000} distance="50px" delay={1200}>
+        <Fade bottom duration={1000} distance="50px" delay={2500}>
           <>
-          <Row>
-            <TiledSection title="work." tilesData={workData} onTileClick={this.openWorkDetailPage}/>
-          </Row>
-          <Row>
-            <TiledSection title="projects." tilesData={projectData} onTileClick={this.openProjectDetailPage}/>
-          </Row>
+            <Row>
+              <TiledSection title="work." tilesData={workData} onTileClick={this.openWorkDetailPage}/>
+            </Row>
+            <Row>
+              <TiledSection title="projects." tilesData={projectData} onTileClick={this.openProjectDetailPage}/>
+            </Row>
           </>
         </Fade>
         <WorkDetailPage show={this.state.workDetailPageVisible} data={this.state.detailPageData} />
