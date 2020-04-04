@@ -3,6 +3,10 @@
     padding-bottom: 40px;
     font-size: 1.3em;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.1em;
+    }
     
     .section-title {
         min-width: 200px;

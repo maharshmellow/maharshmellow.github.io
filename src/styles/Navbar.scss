@@ -3,6 +3,10 @@
         .logo {
             font-weight: 700;
             font-size: 1.4em;
+
+            @media screen and (max-width: 576px) {
+                font-size: 1.1em;
+            }
         }
         padding: 0 !important;
 
@@ -16,6 +20,10 @@
 
             &:hover {
                 color: black;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 0.8em;
             }
         }
         
