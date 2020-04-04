@@ -10,10 +10,23 @@ import Modal from "react-bootstrap/Modal";
 
 class ProjectDetailPage extends Component {
 
-  renderProjectContents = () => {
-    var technologies;
+  renderNotice = () => {
+    if (this.props.data.notice) {
+      return (
+        <Fade bottom distance="20px">
+          <HeadShake delay={500} count={3}>
+            <Row>
+              <div className="notice">{this.props.data.notice}</div>
+            </Row>
+          </HeadShake>
+        </Fade>
+      );
+    } 
+  }
+
+  renderTechnologies = () => {
     if (this.props.data.technologies) {
-      technologies = 
+      return (
         <div className="technologies subsection">
           <h1>Technologies</h1>
           <div className="technologyPillContainer">
@@ -24,11 +37,13 @@ class ProjectDetailPage extends Component {
             }
           </div>
         </div>
+      );
     }
+  }
 
-    var view;
+  renderDemoLinks = () => {
     if (this.props.data.demoLink || this.props.data.githubLink) {
-      view = 
+      return(
         <div className="view subsection">
           <h1>View</h1>
           <div className="viewButtonContainer">
@@ -44,21 +59,14 @@ class ProjectDetailPage extends Component {
             }
           </div>
         </div>
+      );
     }
+  }
 
+  renderProjectContents = () => {
     return (
       <div>
-        {
-          this.props.data.notice ? 
-            <Fade bottom distance="20px">
-              <HeadShake delay={500} count={3}>
-                <Row>
-                  <div className="notice">{this.props.data.notice}</div>
-                </Row>
-              </HeadShake>
-            </Fade>
-          : null
-        }
+        {this.renderNotice()}
         <Fade bottom distance="20px">
           <Row>
             <div className="subsection">
@@ -67,10 +75,10 @@ class ProjectDetailPage extends Component {
             </div>
           </Row>
           <Row>
-            {technologies}
+            {this.renderTechnologies()}
           </Row>
           <Row>
-            {view}
+            {this.renderDemoLinks()}
           </Row>
         </Fade>
       </div>
