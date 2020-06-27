@@ -13,6 +13,12 @@ const projectData = [
         notice: "This project is still under development."
     },
     {
+        title: "FL/DP for Mozilla",
+        description: "## This was an open-source simulation created with a Mozilla team, over 4 months, to help determine if they should invest in infrastructure to support Federated Learning and Differencial Privacy for their products.",
+        technologies: ["Python", "scikit-learn"],
+        githubLink: "https://github.com/mozilla/CANOSP-2019/"
+    },
+    {
         title: "Live Transit",
         description: "## Shows the live location of all the Edmonton Transit System Busses and their estimated arrival times at all stops on the trip.",
         technologies: ["Flask", "Google Transit", "Google Maps", "Edmonton Open Data APIs"],
@@ -42,7 +48,7 @@ const projectData = [
     },
     {
         title: "CanLink Project",
-        description: "## A website created for the Canadian Linked Data Initiative that converts Library Metadata into Linked Data. This project will be used by University Libraries across Canada to convert their data into Linked Data and to help uncover relationships between data that were previously hard to find.",
+        description: "## A website created for the Canadian Linked Data Initiative that converts Library Metadata into Linked Data. This project is currently used by University Libraries across Canada to convert their data into Linked Data and to help uncover relationships between data that were previously hard to find.",
         technologies: ["Django", "PyMarc", "RDFLib", "Apache Jena Fuseki", "SPARQL"],
         githubLink: "https://github.com/cldi/CanLink",
     },
@@ -68,14 +74,7 @@ const projectData = [
         technologies: ["Django", "Till API"],
         demoLink: "https://sms.maharsh.net/",
         githubLink: "https://github.com/maharshmellow/sms-verify"
-    },
-    {
-        title: "Sprintr",
-        description: "## A website that allows a user to upload a book and read it using a Rapid Serial Visual Representation Method similar to the one offered by Spritz Inc. The book can be imported in most popular book formats like EPUB and MOBI.",
-        notice: "Due to a chrome update breaking the changes, the live demo is no longer active. There is however a gif of the app in action in the Github repo.",
-        githubLink: "https://github.com/maharshmellow/sprintr"
-    },
-
+    }
 ];
 
 export default projectData;
